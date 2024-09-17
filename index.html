@@ -1,0 +1,243 @@
+<html>
+<head>
+<meta name="description" content="Esta pagina esta diseñada para ofrecer
+nuevas formas de estar conectado con nosotros y el mundo">
+<meta name="keyword" content="mantenimiento, equipos de computo, herramientas,
+servicio al cliente, repuestos, reparación">
+
+<title>TechMasters S.A.S.</title>
+
+</head>
+
+<body bgcolor="#252423">
+<center><table width="950"><tr><td>
+
+<img src="images\logo 3.png" alt="logo 
+de nuestra pagina web">
+<img src="images\nombre empresa.png" 
+alt="nombre de nuestra empresa">
+
+<table>
+<td>
+<img src="images\fondo blanco.png">
+</td>
+
+<td>
+<a href="index.html">
+<img src="images\inicio.png" border="0" alt="boton 
+de inicio">
+</a>
+</td>
+
+<td>
+<a href="misión.html">
+<img src="images\misión.png" border="0" alt="boton 
+de misión">
+</a>
+</td>
+
+<td>
+<a href="empresa.html">
+<img src="images\empresa.png" border="0" alt="boton 
+de empresa">
+</a>
+</td>
+
+<td>
+<a href="servicios.html">
+<img src="images\servicios.png" border="0" alt=" boton 
+de servicios">
+</a>
+</td>
+
+<td>
+<a href="contactos.html">
+<img src="images\contactos.png" border="0" alt="boton 
+de contactos">
+</a>
+</td>
+
+<td>
+<img src="images\fondo blanco.png">
+</td>
+
+</table>
+<img src="images\franja blanca.png">
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow de Imágenes</title>
+    <style>
+        /* Estilo del contenedor del slideshow */
+        .slideshow-container {
+            position: relative;
+            max-width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Estilo de las imágenes dentro del slideshow */
+        .slides {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilo para los botones de navegación (previo y siguiente) */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Estilo para los puntos de navegación */
+        .dot-container {
+            text-align: center;
+            position: center;
+            bottom: 50%;
+            width: 100%;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #b1a326;
+        }
+    
+    </style>
+
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slides">
+            <img src="images\perifericos.jpg" alt="Imagen 1" style="width:100%">
+        </div>
+        <div class="slides">
+            <img src="images\chip.jpg" alt="Imagen 2" style="width:100%">
+        </div>
+        <div class="slides">
+            <img src="images\HDD.jpg" alt="Imagen 3" style="width:100%">
+        </div>
+        <div class="slides">
+            <img src="images\AI.jpg" alt="Imagen 4" style="width:100%">
+        </div>
+        <div class="slides">
+            <img src="images\mantenimientos.jpg" alt="Imagen 5" style="width:100%">
+        </div>
+
+        <!-- Botones de navegación -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Puntos de navegación -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Función para avanzar o retroceder las diapositivas
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Función para mostrar la diapositiva actual
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        // Función para mostrar las diapositivas
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Cambiar diapositiva automáticamente cada 5 segundos
+        setInterval(() => plusSlides(1), 5000);
+    </script>
+
+<center><table border ="1" width="90%" bgcolor="#ffffff">
+<tr>
+
+<td colspan="2">
+<center><font face="verdana">
+<h1>
+Bienvenidos a TechMaster S.A.S.
+</h1>
+</font></center>
+</td>
+
+</tr>
+<br>
+<tr>
+<td><p>El objetivo del portafolio de TechMasters S.A.S. es presentar de manera 
+integral los servicios de mantenimiento y soporte técnico que ofrecemos a nuestros clientes, 
+destacando nuestro compromiso con la calidad, seguridad y eficiencia. Este documento tiene la finalidad 
+de proporcionar una visión clara de nuestros servicios, certificaciones y alianzas para facilitar la toma de 
+decisiones en cuanto al mantenimiento y la gestión de sus sistemas informáticos.
+</p>
+</td>
+
+<td><img src="images\200w.gif" alt="trabajar">
+
+</td>
+
+</tr>
+
+</table></center>
+
+<center>
+
+<a href="index.html">inicio</a> -
+<a href="misión.html">misión</a> -
+<a href="empresa.html">empresa</a> -
+<a href="servicios.html">servicios</a> -
+<a href="contactos.html">contactos</a>
+<br>Copyright 2024 Mandanos un mensaje via email a 
+<a href="mailto:servicioalcliente@TechMastersbogotá.com">servicioalcliente@TechMastersbogotá.com
+</a>
+
+</center>
+
+</td></tr></table></center>
+</body>
+</html>
